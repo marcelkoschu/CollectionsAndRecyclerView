@@ -1,5 +1,6 @@
 package at.fh.swengb.collectionsandrecyclerview
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // doWork()
-        mutableWork()
+        //mutableWork()
+
+        val intent = Intent(this,StudentDatabase::class.java)
+        startActivity(intent)
 
     }
 
@@ -128,5 +132,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-    }
+
 }
